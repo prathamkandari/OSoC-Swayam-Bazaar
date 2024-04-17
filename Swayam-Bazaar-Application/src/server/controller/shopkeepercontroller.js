@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const Shopkeeper = require('../models/ShopkeeperModel')
-const jwt = require('jsonwebtoken')
+const Shopkeeper = require('../models/ShopkeeperModel');
+const jwt = require('jsonwebtoken');
 const cookie = require('cookie');
 
 
