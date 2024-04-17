@@ -2,7 +2,7 @@
   "name": "swayam-bazaar",
   "version": "0.1.0",
   "private": true,
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -36,10 +36,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "npm run dev",
+    "dev": "nodemon server.js",
     "build": "npm run build",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
