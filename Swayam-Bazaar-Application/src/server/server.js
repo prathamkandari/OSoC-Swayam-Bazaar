@@ -14,7 +14,7 @@ app.use(express.json());
 const cors = require('cors');
 const cookieParser = require('cookie-parser')
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['https://mysterious-yoke-bear.cyclic.app/'];
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
