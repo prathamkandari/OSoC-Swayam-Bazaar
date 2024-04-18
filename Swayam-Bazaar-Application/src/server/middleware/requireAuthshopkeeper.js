@@ -10,7 +10,7 @@ const authenticateShopkeeper = async (req, res, next) => {
       return res.status(401).json({ error: 'Unauthorized' });
     }
     // Verify the token
-    const decoded = jwt.verify(token, process.env.SECRET); // Replace 'your-secret-key' with your actual secret key
+    const decoded = jwt.verify(token, 'qwertyuiop123'); // Replace 'your-secret-key' with your actual secret key
     // Check if the user exists
     const user = await Shopkeeper.findOne({ email: decoded.email });
     if (!user) {

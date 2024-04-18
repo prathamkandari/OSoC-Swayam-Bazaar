@@ -36,7 +36,7 @@ app.use("/api/Products",Products);
 app.use("/api/Order",Order);
 
 // connect to db
-mongoose.connect(process.env.MONGO_URI , {
+mongoose.connect('mongodb+srv://akshitbhutani:SrCHRzge8ycDLDYH@swayam-bazaar-cluster.78atsav.mongodb.net/' , {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -48,7 +48,7 @@ db.once('open', () => {
 
 
     // listen to port
-const port = process.env.PORT || 5000; // Choose the desired port for your server
+const port = 5000; // Choose the desired port for your server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
